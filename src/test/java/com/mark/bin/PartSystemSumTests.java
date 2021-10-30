@@ -14,12 +14,6 @@ class PartSystemSumTests {
         readPartRecordExcel();
     }
 
-    /**
-     * 步骤：
-     * 1.删除test-classes/excel_template下的《测试.xlsx》
-     * 2.运行测试
-     * 3.打开《测试.xlsx》（之前关闭相关文件，防止阅读软件（如wps）的缓存）
-     */
     private void readPartRecordExcel() {
         String inputExcelFilename = Thread.currentThread().getContextClassLoader().getResource("").getPath() + File
         .separator + "excel_template" + File.separator  + "每月耗材.xlsx";
